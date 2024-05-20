@@ -6,13 +6,21 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.one {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
 header {
-  width: 100vw;
-  height: 11vh;
+  width: 100%;
+  padding: 12px;
+  height: 11%;
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding-left: 55px;
+  justify-content: space-between;
+  /* padding-left: 55px; */
 }
 header h2 {
   color: #e42a12;
@@ -20,7 +28,9 @@ header h2 {
   letter-spacing: -0.1em;
 }
 header ul {
-  margin-left: 880px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 header ul li {
   display: inline;
@@ -52,10 +62,11 @@ header button {
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   background-image: url(/assets/banner.webp);
-  height: 83vh;
+  height: 89%;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -85,6 +96,7 @@ header button {
   border: none;
   border-radius: 40px;
 }
+
 .two {
   height: 98vh;
 }
@@ -122,20 +134,23 @@ header button {
   padding-left: 30px;
   padding-top: 10px;
 }
-.pic ul li {
+.check ul li {
+
   color: #1a1a1a;
-  font-size: 12px;
-  padding-left: 10px;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-top: 20px;
   list-style: none;
 }
-.pic ul li img {
-  width: 20px;
-  height: 12px;
-  margin-right: 10px;
+.pic i{
+  color: #36BD2C;
+  font-size: 15px;
 }
+
 .three {
-  width: 100vw;
+  width: 100%;
   height: 96vh;
+  display: flex;
 }
 .Family_cooking {
   background-image: url(/assets/Family_cooking.webp);
@@ -147,8 +162,7 @@ header button {
 .works {
   height: 96vh;
   background-color: #fbe6de;
-  width: 100%;
-  margin-left: 750px;
+  width: 50%;
   padding-left: 100px;
 }
 
@@ -168,12 +182,14 @@ header button {
   line-height: 150%;
   letter-spacing: -0.01em;
 }
-.custom-numbers li::marker {
-  color: #FF946E;
-  font-weight: bold;
-  font-size: 25px;
+.custom-numbers span{
+  padding-right: 5px;
+  color: #ff946e;
+  font-weight: bolder;
+  font-size: 27px;
 }
-.works ol li {
+.custom-numbers p {
+  line-height: 10px;
   padding-top: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -187,14 +203,13 @@ header button {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 .four {
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ;
 }
 .four h1 {
   color: #484848;
@@ -208,12 +223,94 @@ header button {
   text-align: center;
   line-height: 28px;
 }
-.four img {
+.vegetables{
   display: flex;
-  width: 50px;
-  height: 50px;
+  gap: 30px;
+  margin-top: 40px;
 }
-.four button {
+.vegan{
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  background-image: url(/assets/vegan.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.vegan p{
+  border-radius: 15px;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: #D8F4A4;
+  color: #7BA73E;
+}
+.classic{
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  background-image: url(/assets/weekly_classic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.classic p{
+  border-radius: 10px;
+  padding: 5px;
+  width: 160px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: #D9E3FE;
+  color: #647AD9;
+}
+.vegetarian {
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  background-image: url(/assets/Vegetarian.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.vegetarian p{
+  border-radius: 15px;
+  padding: 5px;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: #C8F5DA;
+  color: #4AB095;
+}
+.vegetables button{
+  margin-top: 70px;
+  color: #FF946E;
+  border: 1px solid #FAD4D0;
+  font-size: 18px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.view_menu{
   width: 180px;
   height: 50px;
   border: none;
@@ -222,6 +319,7 @@ header button {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 50px;
 }
 .five {
   background-color: #f3f4f6;
@@ -273,6 +371,7 @@ span {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .yeah {
   display: flex;
   margin-top: 80px;
