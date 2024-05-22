@@ -21,6 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   /* padding-left: 55px; */
+  position: relative;
 }
 header h2 {
   color: #e42a12;
@@ -58,6 +59,27 @@ header button {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+}
+.hidden_main {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 5%;
+  width: 25%;
+  height: 95vh;
+  background-color: #fff;
+}
+.hidden_main button{
+  margin-top: 20px;
+  width: 160px;
+}
+.hidden_main p{
+  font-size: 20px;
+  padding-top: 45px;
+  padding-left: 10px;
+}
+header label {
+  display: none;
 }
 .banner {
   display: flex;
@@ -135,15 +157,14 @@ header button {
   padding-top: 10px;
 }
 .check ul li {
-
   color: #1a1a1a;
   font-size: 18px;
   padding-left: 30px;
   padding-top: 20px;
   list-style: none;
 }
-.pic i{
-  color: #36BD2C;
+.pic i {
+  color: #36bd2c;
   font-size: 15px;
 }
 
@@ -182,7 +203,7 @@ header button {
   line-height: 150%;
   letter-spacing: -0.01em;
 }
-.custom-numbers span{
+.custom-numbers span {
   padding-right: 5px;
   color: #ff946e;
   font-weight: bolder;
@@ -223,12 +244,12 @@ header button {
   text-align: center;
   line-height: 28px;
 }
-.vegetables{
+.vegetables {
   display: flex;
   gap: 30px;
   margin-top: 40px;
 }
-.vegan{
+.vegan {
   border-radius: 5px;
   width: 300px;
   height: 200px;
@@ -241,17 +262,17 @@ header button {
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.vegan p{
+.vegan p {
   border-radius: 15px;
   padding: 5px;
   width: 80px;
   height: 40px;
   font-size: 20px;
   font-weight: lighter;
-  background-color: #D8F4A4;
-  color: #7BA73E;
+  background-color: #d8f4a4;
+  color: #7ba73e;
 }
-.classic{
+.classic {
   border-radius: 5px;
   width: 300px;
   height: 200px;
@@ -264,15 +285,15 @@ header button {
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.classic p{
+.classic p {
   border-radius: 10px;
   padding: 5px;
   width: 160px;
   height: 40px;
   font-size: 20px;
   font-weight: lighter;
-  background-color: #D9E3FE;
-  color: #647AD9;
+  background-color: #d9e3fe;
+  color: #647ad9;
 }
 .vegetarian {
   border-radius: 5px;
@@ -287,20 +308,20 @@ header button {
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.vegetarian p{
+.vegetarian p {
   border-radius: 15px;
   padding: 5px;
   width: 120px;
   height: 40px;
   font-size: 20px;
   font-weight: lighter;
-  background-color: #C8F5DA;
-  color: #4AB095;
+  background-color: #c8f5da;
+  color: #4ab095;
 }
-.vegetables button{
+.vegetables button {
   margin-top: 70px;
-  color: #FF946E;
-  border: 1px solid #FAD4D0;
+  color: #ff946e;
+  border: 1px solid #fad4d0;
   font-size: 18px;
   padding: 15px;
   display: flex;
@@ -310,7 +331,7 @@ header button {
   border-radius: 50px;
   background-color: #fff;
 }
-.view_menu{
+.view_menu {
   width: 180px;
   height: 50px;
   border: none;
@@ -323,7 +344,7 @@ header button {
 }
 .five {
   background-color: #f3f4f6;
-  height: 140vh;
+  height: 170vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -379,6 +400,9 @@ span {
   height: 20vh;
   border-radius: 15px;
   background-color: #fff;
+}
+.button_new{
+  display: none;
 }
 .new {
   margin-left: 18px;
@@ -563,6 +587,9 @@ footer h2 {
 .sup label {
   font-size: 14px;
 }
+.sabuscraibu{
+  display: flex;
+}
 .sup input {
   border-radius: 5px;
   height: 50px;
@@ -576,6 +603,7 @@ footer h2 {
   border-radius: 5px;
   background-color: #e42a12;
   color: #fff;
+  margin-top: 10px;
 }
 .google_reviews {
   margin-right: 220px;
@@ -607,4 +635,217 @@ footer h2 {
 }
 .finalle a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .one{
+    height: 45vh;
+  }
+  header h2{
+    margin-right: 700px;
+  }
+  header ul {
+    display: none;
+  }
+
+  .toggle:checked  ~.hidden_main{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  header label {
+    display: block;
+  }
+
+  .banner{
+    background: url(/assets/mobile-banner.webp);
+    background-size: cover;
+    background-position: bottom;
+    height: 42vh;
+  }
+
+  .two{
+    height: 110vh;
+  }
+  .pic{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .three{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .Family_cooking{
+    width: 100%;
+  }
+
+  .works{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works h2{
+    margin-right: 250px;
+  }
+  .works p{
+    margin-right: 250px;
+  }
+  .works button{
+    width: 100%;
+    margin-right: 120px;
+  }
+  .custom-numbers{
+    margin-right: 280px;
+  }
+  .four{
+    height: 80vh;
+  }
+  .vegetables{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .vegetables button{
+    display: none;
+  }
+  .vegan{
+    width: 90%;
+  }
+  .classic{
+    width: 90%;
+  }
+  .vegetarian{
+    width: 90%;
+  }
+  .view_menu{
+    width: 90%;
+    margin-right: 30px;
+  }
+  .five{
+    height: 105vh;
+  }
+  .food{
+    display: flex;
+    margin-left: 80px;
+  }
+  .food img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .yeah{
+    width: 90%;
+    height: 140px;
+    padding-left: 30px;
+  }
+  .button_new{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 50px;
+    height: 32px;
+    border-radius: 30px;
+    border: none;
+    background-color: #e42a12;
+    color: #fff;
+  }
+  .hello{
+    margin-top: 15px;
+  }
+  .hello button{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .six{
+    height: 50vh;
+    color: #FFF4EE;
+  }
+  .more p{
+    font-size: 16px;
+  }
+  footer{
+    height: 42vh;
+  }
+  .blog{
+    display: none;
+  }
+  .google_reviews{
+    display: none;
+  }
+  footer h2{
+    padding-top: 35px;
+  }
+  .foot{
+    margin-left: 50px;
+  }
+  .newsletter{
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .finalle{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .one{
+    height: max-content;
+  }
+  header{
+    height: max-content;
+  }
+  header h2{
+    font-size: 30px;
+    padding-left: 40px;
+  }
+  header label{
+    font-size: 30px;
+    color: #999999;
+    padding-left: 20px;
+  }
+  .banner{
+    height: max-content;
+  }
+  .banner h1{
+    padding-top: 70px;
+    font-size: 30px;
+  }
+  .banner p{
+    font-size: 16px;
+  }
+  .banner button{
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .two{
+    height: max-content;
+  }
+  .choose h3{
+    font-size: 25px;
+  }
+  .choose p{
+    font-size: 16px;
+    text-align: center;
+  }
+  .pic img{
+    width: 90%;
+    margin-left: 15px;
+  }
+  .pic h3{
+    padding-left: 15px;
+  }
+  .pic ul li{
+    font-size: 16px;
+  }
 }

@@ -8,19 +8,37 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    
     <title>HelloChef</title>
   </head>
   <body>
-    
     <section class="one">
       <header>
+        <input
+          type="checkbox"
+          class="toggle"
+          style="display: none"
+          name=""
+          id="check"
+        />
+        <label for="check"><i class="fa-solid fa-bars"></i></label>
         <h2>hellochef</h2>
         <ul>
           <li><a href="#">Our Plans</a></li>
           <li><a href="#">Weekly Menu</a></li>
-          <li><a href="#">How it Works</a></li>
+          <li><a href="howitworks.html">How it Works</a></li>
           <button>Sign In</button>
         </ul>
+        <div class="hidden_main">
+            <button>Sign In</button>
+            <p><i class="fa-solid fa-user"></i> Our Plans</p>
+            <p><i class="fa-solid fa-book"></i> Weekly Menu</p>
+            <p><i class="fa-solid fa-star"></i> How it Works</p>
+            <p><i class="fa-solid fa-comment"></i> Help</p>
+            <p><i class="fa-solid fa-recycle"></i> Sustainability</p>
+            <p><i class="fa-solid fa-book-bookmark"></i> Public policies</p>
+          </div>
+        </div>
       </header>
       <div class="banner">
         <h1>
@@ -34,7 +52,7 @@
         <button>Get Started</button>
       </div>
     </section>
-    
+
     <section class="two">
       <div class="choose">
         <h3>Why choose us?</h3>
@@ -50,16 +68,16 @@
           <div class="check">
             <ul>
               <li>
-                <i class="fa-solid fa-check"></i>  Pre-measured
-                ingredients & easy recipes
+                <i class="fa-solid fa-check"></i> Pre-measured ingredients &
+                easy recipes
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>  Contactless,
-                doorstep delivery across UAE
+                <i class="fa-solid fa-check"></i> Contactless, doorstep delivery
+                across UAE
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>  Skip a delivery or
-                cancel anytime
+                <i class="fa-solid fa-check"></i> Skip a delivery or cancel
+                anytime
               </li>
             </ul>
           </div>
@@ -69,17 +87,13 @@
           <h3>Variety</h3>
           <div class="check">
             <ul>
+              <li><i class="fa-solid fa-check"></i> New recipes every week</li>
               <li>
-                <i class="fa-solid fa-check"></i>  New recipes every
-                week
+                <i class="fa-solid fa-check"></i> 24+ dishes to choose from
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>  24+ dishes to choose
-                from
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>  Low-calorie &
-                family-friendly options
+                <i class="fa-solid fa-check"></i> Low-calorie & family-friendly
+                options
               </li>
             </ul>
           </div>
@@ -90,43 +104,41 @@
           <div class="check">
             <ul>
               <li>
-                <i class="fa-solid fa-check"></i>  No skimpin' on the
-                portion size!
+                <i class="fa-solid fa-check"></i> No skimpin' on the portion
+                size!
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>  100% satisfaction
-                guarantee, or we will make it right
+                <i class="fa-solid fa-check"></i> 100% satisfaction guarantee,
+                or we will make it right
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>  Fresh ingredients
-                from local, trusted suppliers
+                <i class="fa-solid fa-check"></i> Fresh ingredients from local,
+                trusted suppliers
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-  
+
     <section class="three">
-      <div class="Family_cooking">
-      </div>
+      <div class="Family_cooking"></div>
       <div class="works">
         <h2>How it works</h2>
         <p>
-          Simplify home cooking in just 4 easy steps. Get quality ingredients
-          &
+          Simplify home cooking in just 4 easy steps. Get quality ingredients &
           <br />great recipes delivered to your door.
         </p>
         <div class="custom-numbers">
-          <p><span>1</span>  Select your box</p>
-          <p><span>2</span>  Choose your recipes</p>
-          <p><span>3</span>  Receive your delivery</p>
-          <p><span>4</span>  Cook, eat and enjoy!</p>
+          <p><span>1</span> Select your box</p>
+          <p><span>2</span> Choose your recipes</p>
+          <p><span>3</span> Receive your delivery</p>
+          <p><span>4</span> Cook, eat and enjoy!</p>
         </div>
         <button>Learn more</button>
       </div>
     </section>
-    
+
     <section class="four">
       <h1>Ready to cook healthy & inspiring meals?</h1>
       <p>
@@ -151,17 +163,21 @@
       </div>
       <button class="view_menu">View Menu</button>
     </section>
-    
+
     <section class="five">
       <div class="instagram">
         <img src="/assets/instagram.webp" alt="" />
         <p>#hellochef</p>
       </div>
       <div class="food">
+        <div>
         <img src="/assets/dxblivin-credit.webp" alt="" />
         <img src="/assets/ayshasaiha.webp" alt="" />
+      </div>
+      <div>
         <img src="/assets/shrimply.webp" alt="" />
         <img src="/assets/ashley_dxb.webp" alt="" />
+      </div>
       </div>
       <div class="meals">
         <p>
@@ -186,10 +202,11 @@
       <div class="yeah">
         <div>
           <img
-            style="height: 50px; margin-left: 20px; margin-top: 35px"
+            style="height: 50px; margin-left: 20px; margin-top: 30px"
             src="/assets/download-removebg-preview.png"
             alt=""
           />
+          <button class="button_new">NEW</button>
         </div>
         <div class="new">
           <div class="hello">
@@ -276,7 +293,7 @@
         <div class="sup">
           <h3>Subscribe to our newsletter</h3>
           <label for="email">Enter your email</label>
-          <div>
+          <div class="sabuscraibu">
             <input type="email" name="email" id="email" />
             <button>Subscribe</button>
           </div>
@@ -306,9 +323,11 @@
       </div>
       <div class="finalle">
         <h4>Made with <i class="fa-solid fa-heart"></i> for UAE</h4>
-        <p>© Copyright 2024 Hello Chef All rights reserved <a href="#">Public Policies & Statements</a></p>
+        <p>
+          © Copyright 2024 Hello Chef All rights reserved
+          <a href="#">Public Policies & Statements</a>
+        </p>
       </div>
     </footer>
-  
   </body>
 </html>
